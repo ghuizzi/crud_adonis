@@ -24,4 +24,7 @@ Route.get('/', async () => {
   return { hello: 'world' }
 })
 Route.get('/courses', 'CoursesController.index')
+Route.get('/course/:id', 'CoursesController.show')
 Route.post('/course', 'CoursesController.store')
+Route.put('/course/:id', 'CoursesController.update')
+Route.delete('/course/:id', 'CoursesController.delete')
